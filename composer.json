@@ -1,0 +1,32 @@
+{
+    "name": "typhoeus/jlevers-spapi",
+    "description": "A Laravel integration package for Amazon's Selling Partner API (SP-API) using the jlevers/selling-partner-api library. Developed under the typhoeus namespace, this package offers a streamlined setup for managing SP-API operations like inventory, orders, feeds, and reports within Laravel applications.",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.0",
+        "jenssegers/mongodb": "^3.7",
+        "jlevers/selling-partner-api": "^5.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Typhoeus\\JleversSpapi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers" : [
+                "Typhoeus\\JleversSpapi\\Providers\\JleversSpapiServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Romer Necesario",
+            "email": "blast.romer@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
